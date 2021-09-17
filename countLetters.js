@@ -6,7 +6,9 @@ const countLetters = function (inputString) {
       countLetters[char] += 1;
     } else {
       countLetters[char] = 1;
-    }
+    } 
   }
   return countLetters
 }
+
+console.log(countLetters("Wiggly Donnie"));
