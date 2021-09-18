@@ -1,10 +1,14 @@
-const findKeyByValue = function (object, keyValue) {
-  const values = Object.values(object);
-  for (let i = 0; i < values.length; i++) {
-    if (values[i] === keyValue) {
-      return Object.keys(object)[i];
-    }
-  }
-
-  return undefined;
+const findKeyByValue = function (object, value) {
+  return Object.keys(object).find(x => object[x] === value)
 }
+
+
+const testObject = {
+  "a": 1,
+  "b": 2,
+  "c": 3
+}
+
+console.log(findKeyByValue(testObject), 1);
+
+
