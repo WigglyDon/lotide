@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@wigglydonnie/lotide",
   "version": "1.0.0",
-  "description": "a custom build library with functions similar to to the lodash library\"",
+  "description": "a custom build library with functions similar (but slightly more special ;) ) to to the lodash library\"",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
