@@ -1,14 +1,17 @@
-const eqArrays = function (a, b) {
-  if (!Array.isArray(a) || !Array.isArray(b)) {
+const eqArrays = function (actual, expected) {
+  if (!Array.isArray(actual) || !Array.isArray(expected)) {
     return false;
   }
-  if (a.length !== b.length) {
+  if (actual.length !== expected.length) {
     return false;
   }
-  for (let i = 0; i < a.length; i++) {
-    if (a[i] !== b[i]) {
+  for (let i = 0; i < actual.length; i++) {
+    if (actual[i] !== expected[i]) {
       return false;
     }
   }
   return true;
 }
+ 
+
+module.exports = eqArrays;
